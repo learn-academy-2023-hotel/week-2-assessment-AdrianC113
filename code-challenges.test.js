@@ -42,72 +42,75 @@
 //     })
 // }
 
-// // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
+// --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
-// // a) Create a test with expect statements for each of the variables provided.
+// a) Create a test with expect statements for each of the variables provided.
 
-// describe('divisibleByThree', () => {
-//     it(`takes a object as an argument and decides if the number inside it is evenly divisible by three or not`, () => {
-//         const object1 = { number: 15 }
-//         // Expected output: "15 is divisible by three"
-//         const object2 = { number: 0 }
-//         // Expected output: "0 is divisible by three"
-//         const object3 = { number: -7 }
-//         // Expected output: "-7 is not divisible by three"
-//         expect(divisibleByThree(object1)).toEqual("15 is divisible by three")
-//         expect(divisibleByThree(object2)).toEqual("0 is divisible by three")
-//         expect(divisibleByThree(object3)).toEqual("-7 is not divisible by three")
-//      })
-//  })
+describe('divisibleByThree', () => {
+    it(`takes an object as an argument and decides if the number inside it is evenly divisible by three or not`, () => {
+        const object1 = { number: 15 }
+        // Expected output: "15 is divisible by three"
+        const object2 = { number: 0 }
+        // Expected output: "0 is divisible by three"
+        const object3 = { number: -7 }
+        // Expected output: "-7 is not divisible by three"
+        expect(divisibleByThree(object1)).toEqual("15 is divisible by three")
+        expect(divisibleByThree(object2)).toEqual("0 is divisible by three")
+        expect(divisibleByThree(object3)).toEqual("-7 is not divisible by three")
+     })
+ })
 
-// // ReferenceError: dividedByThree is not defined
+// ReferenceError: dividedByThree is not defined
 
-// // b) Create the function that makes the test pass.
+// b) Create the function that makes the test pass.
 
-// // Pseudo code:
+// Pseudo code:
 
-// // input: an object's number
-// // output: a string that states the object's number and if it is divisible by three or not
-// const divisibleByThree = (object) => {
-//     if (Object.values(object) % 3 === 0) {
-//         // iterate using modulo operator and see if each value in the object is divisible by three
-//        return `${Object.values(object)} is divisible by three`
-//        // return string interpolation calling forth the object's value along with a note of whether it is divisible by three or not
-//     } else {
-//         return `${Object.values(object)} is not divisible by three`
-//     }
-// }  
+// input: an object's number
+// output: a string that states the object's number and if it is divisible by three or not
+const divisibleByThree = (object) => {
+    if (Object.values(object) % 3 === 0) {
+        // iterate using modulo operator and see if each value in the object is divisible by three
+       return `${Object.values(object)} is divisible by three`
+       // return string interpolation calling forth the object's value along with a note of whether it is divisible by three or not
+    } else {
+        return `${Object.values(object)} is not divisible by three`
+    }
+}  
 
-// // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
+// --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
-// // a) Create a test with expect statements for each of the variables provided.
+// a) Create a test with expect statements for each of the variables provided.
 
-// describe (`capitalizedWords`, () => {
-//     it(`takes in an array of words and returns an array with all the words capitalized.`, () => {
-//         const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-//         // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-//         const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
-//         // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
-//         expect(capitalizedWords(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-//         expect(capitalizedWords(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
-//     })
-// })
+describe (`capitalizedWords`, () => {
+    it(`takes in an array of words and returns an array with all the words capitalized.`, () => {
+        const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+        // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+        const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
+        // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
+        expect(capitalizedWords(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+        expect(capitalizedWords(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+    })
+})
 
-// // ReferenceError: capitalizedWords is not defined
+// ReferenceError: capitalizedWords is not defined
 
-// // b) Create the function that makes the test pass.
+// b) Create the function that makes the test pass.
 
-// // Pseudo code:
+// Pseudo code:
 
-// // input: array of strings
-// // output: array with all strings with the first letter capitalized
-// const capitalizedWords = (arr) => {
-//     // iterate using .map
-//     return arr.map((value) => {
-//         // return using .toUpperCase to capitalize the letter under the 0 index and .slice to insert the rest of the string from the 1 index and so forth
-//         return value[0].toUpperCase() + value.slice(1)
-//     })
-// }  
+// input: array of strings
+// output: array with all strings with the first letter capitalized
+const capitalizedWords = (arr) => {
+    // iterate using .map
+    return arr.map((value) => {
+        // return using .toUpperCase to capitalize the letter under the 0 index and .slice to insert the rest of the string from the 1 index and so forth
+        return value[0].toUpperCase() + value.slice(1)
+    })
+}  
+
+// temperature
+// t + emperature
 
 var x;
 console.log(x);

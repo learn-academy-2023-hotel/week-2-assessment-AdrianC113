@@ -46,7 +46,7 @@ const myCodingSkills = {
 // console.log(myCodingSkills.languages[0])
 
 // a) Your answer: JavaScript
-// b) Verify and explain: Answer JavaScript
+// b) Verify and explain: Answer: JavaScript
 // The code, when logged, outputs JavaScript. The value is found in the myCodingSkills object under the "language" key and the console.log is calling for the value in the "0" index position, which is JavaScript.
 
 // --------------------5) What will this log?
